@@ -1,39 +1,119 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            FOSSMEC
-        </title>
-        <style>
-            body{
-                background-color: linear-gradient(red,yellow,green);
-                background-color: rgb(13, 60, 73);
-            }
-            .header{
-                background-color: rgb(11, 100, 95);
-                padding-right: 100px;
-                align-items: center;
-                padding: 15px;
-                display: flex;
-                position: absolute;
-                margin-left: 35%;
-                border-radius: 10px;
-                color: rgb(54, 255, 255);
-                box-shadow: 100px;
-            }
-            a{
-                cursor: pointer;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <div class="header" >
-            <a onclick="window.location.href='index.html' "> <img  width="50px" height="40px" onclick="window.location.href='index.html' " src="fossmec.png">&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            <a onclick="window.location.href='about.html' ">ABOUT</a>&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a onclick="window.location.href='events.html' " >EVENTS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a onclick="window.location.href='gallery.html' " >GALLERY</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOSSMEC</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #012E40;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #F0F0F0;
+        }
+
+        .header {
+            background-color: #014F5B;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+            gap: 30px;
+        }
+
+        .header a {
+            color: #3DDC97;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .header a:hover {
+            color: #00BFFF;
+        }
+
+        .header img {
+            height: 40px;
+            width: auto;
+        }
+
+        .com {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            font-size: 30px;
+            color: #FFEFD5;
+        }
+
+        .events-container {
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .event {
+            background-color: #01424E;
+            border-left: 6px solid #3DDC97;
+            border-right: 6px solid #3DDC97;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            margin-top: 20px;
+        }
+
+        .event:hover {
+            transform: translateY(-4px);
+        }
+
+        .event h3 {
+            color: #3DDC97;
+            margin-top: 0;
+        }
+
+        .event p {
+            color: #E0E0E0;
+            line-height: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="index.html"><img src="fossmec.png" alt="FOSSMEC Logo"></a>
+        <a href="about.html">ABOUT</a>
+        <a href="events.html">EVENTS</a>
+        <a href="gallery.html">GALLERY</a>
+    </div>
+
+    <div class="com">
+        <h1>EVENTS</h1>
+    </div>
+
+    <div class="events-container">
+        <div class="event">
+            <h3>DEVSPRINT</h3>
+            <p>The power of open source is the power of the people. Excel invites you to dive into the world of open source! Explore fascinating projects created by brilliant organizations, with Devsprint, a developer's paradise that invites you to contribute and make an impact!</p>
         </div>
-        
-    </body>
+
+        <div class="event">
+            <h3>INTRO TO GIT AND GITHUB</h3>
+            <p>Intro to Git/GitHub was conducted to introduce students to the open-source community and provide them with all the knowledge required to get started with open-source contributions. The event mainly focused on the fundamentals of Git and GitHub.</p>
+        </div>
+    </div>
+
+</body>
 </html>
