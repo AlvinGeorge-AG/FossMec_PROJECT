@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FOSSMEC
+        </title>
+        <style>
+            body{
+                background-color: linear-gradient(red,yellow,green);
+                background-color: rgb(13, 60, 73);
+              
+            }
+            .header{
+                background-color: rgb(11, 100, 95);
+                padding-right: 100px;
+                align-items: center;
+                padding: 15px;
+                display: flex;
+                position: absolute;
+                margin-left: 35%;
+                border-radius: 10px;
+                color: rgb(54, 255, 255);
+                box-shadow: 100px;
+            }
+            a{
+                cursor: pointer;
+            }
+            .com{
+                margin-top: 100px;
+                position: absolute;
+                color: aliceblue;
+                margin-left: 100px;
+                font-size: 23px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .himage{
+                position: absolute;
+                margin-top: 300px;
+                margin-left: 23% ;
+                border: solid;
+                border-radius: 8px;
+            }
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 columns */
+                gap: 10px;
+                position: absolute;
+                margin-top: 950px;
+                margin-left: 350px;
+               
+            }
+            .image-grid img {
+                width: 100%;
+                height: auto;
+                max-height: 200px;
+                object-fit: cover;
+                border: solid;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header" >
+            <img width="50px" height="40px"  src="fossmec.png">&nbsp;&nbsp;&nbsp;&nbsp;
+            <a onclick="window.location.href='about.html' ">ABOUT</a>&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a onclick="window.location.href='events.html' " >EVENTS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a onclick="window.location.href='gallery.html' " >GALLERY</a>
+        </div>
+        <div class="com">
+            <h1>FOSS GALLERY</h1>
+        </div>
+        <div class="himage">
+            <img src="g5.jpg" width="900px">
+        </div>
+        
+        <div class="image-grid">
+            <img src="g1.jpg">
+            <img src="g2.jpg">
+            <img src="g3.jpg">
+            <img src="g4.jpg">
+            <img src="g5.jpg">
+            <img src="g2.jpg">
+            <div class="">
+                MAY THE FOSS BE WITH YOU
+            </div>
+        </div>
+        
+    </body>
+</html>
