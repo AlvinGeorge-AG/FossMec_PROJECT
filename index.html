@@ -1,60 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            FOSSMEC
-        </title>
-        <style>
-            body{
-                background-color: linear-gradient(red,yellow,green);
-                background-color: rgb(13, 60, 73);
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOSSMEC</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #012E40; /* Dark Teal */
+            color: #F4F4F4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            background-color: #014F5B; /* Slightly lighter teal */
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+            gap: 30px;
+        }
+
+        .header a {
+            color: #3DDC97; /* Mint Green Accent */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .header a:hover {
+            color: #00BFFF; /* Bright Cyan on hover */
+        }
+
+        .header img {
+            height: 40px;
+            width: auto;
+        }
+
+        .com {
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+
+        .com h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #FFFFFF;
+        }
+
+        .cont {
+            margin-top: 20px;
+            margin-left: 100px;
+            font-size: 20px;
+            line-height: 1.6;
+            max-width: 800px;
+            color: #D9E4EC;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 10px;
+                top: 10px;
             }
-            .header{
-                background-color: rgb(11, 100, 95);
-                padding-right: 100px;
-                align-items: center;
-                padding: 15px;
-                display: flex;
-                position: absolute;
-                margin-left: 35%;
-                border-radius: 10px;
-                color: rgb(54, 255, 255);
-                box-shadow: 100px;
+
+            .com, .cont {
+                margin-left: 20px;
+                margin-right: 20px;
             }
-            a{
-                cursor: pointer;
+
+            .com h1 {
+                font-size: 32px;
             }
-            .com{
-                margin-top: 100px;
-                position: absolute;
-                color: aliceblue;
-                margin-left: 100px;
-                font-size: 23px;
-                font-family:Georgia, 'Times New Roman', Times, serif;
+
+            .cont {
+                font-size: 16px;
             }
-            .cont{
-                position: absolute;
-                margin-top: 250px;
-                color: antiquewhite;
-                margin-left: 95px;
-                font-size: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="header" >
-          <a onclick="window.location.href='index.html' "> <img  width="50px" height="40px" onclick="window.location.href='index.html' " src="fossmec.png">&nbsp;&nbsp;&nbsp;&nbsp;</a>
-           <a onclick="window.location.href='about.html' ">ABOUT</a>&nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a onclick="window.location.href='events.html' " >EVENTS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a onclick="window.location.href='gallery.html' " >GALLERY</a>
-        </div>
-        <div class="com">
-            <h1>
-                Free and Open Source<br> Software community
-            </h1>
-        </div>
-        <div class="cont">
-            ​FOSS MEC is the Free and Open Source Software community at<br> Government Model Engineering College (MEC) in Kochi. <br>This student-driven organization is dedicated to promoting the use and development of free and <br>open-source software (FOSS) among students and the broader community.
-        </div>
-    </body>
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="fossmec.png" alt="FOSSMEC Logo"></a>
+        <a href="about.html">ABOUT</a>
+        <a href="events.html">EVENTS</a>
+        <a href="gallery.html">GALLERY</a>
+    </div>
+
+    <div class="com">
+        <h1>
+            Free and Open Source<br>Software Community
+        </h1>
+    </div>
+
+    <div class="cont">
+        FOSS MEC is the Free and Open Source Software community at<br>
+        Government Model Engineering College (MEC) in Kochi.<br>
+        This student-driven organization is dedicated to promoting the use and development of free and<br>
+        open-source software (FOSS) among students and the broader community.
+    </div>
+</body>
 </html>
