@@ -5,95 +5,7 @@
     <meta charset="UTF-8">
     <meta name="auto" content="width=device-width", initial-scale="1.0">
     <title>FOSSMEC</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #012E40;
-            color: #F4F4F4;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .header {
-            background-color: #014F5B; 
-            padding: 15px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 20px;
-            gap: 30px;
-        }
-
-        .header a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .header a:hover {
-            color: #0095ff;
-        }
-
-        .header img {
-            height: 40px;
-            width: auto;
-        }
-
-        .com {
-            margin-top: 150px;
-            margin-left: 100px;
-        }
-
-        .com h1 {
-            font-size: 48px;
-            margin: 0;
-            color: #FFFFFF;
-        }
-
-        .cont {
-            margin-top: 20px;
-            margin-left: 100px;
-            font-size: 20px;
-            line-height: 1.6;
-            max-width: 800px;
-            color: #D9E4EC;
-        }
-        #joinnow{
-            border: solid #012E40;
-            background-color: #012E40;
-            border-radius: 8px;
-            color: #FFFFFF;
-            align-content:center;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 15px;
-        }
-        .foss-facts{
-            margin-left: 100px;
-            padding-top: 10px;
-            font-size: 20px;
-        }
-        .facts{
-            font-size: 35px;
-            text-align: left;
-            padding-top: 30px;
-        }
-        @keyframes colorShift {
-        0% { color: rgb(200, 136, 96); }
-        50% { color: rgb(207, 215, 93); }
-        100% { color: rgb(82, 241, 255); }
-        }
-
-        .facts {
-        animation: colorShift 3s linear infinite;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
@@ -128,46 +40,7 @@
         </div>
     </div>
     
-    <script>
-        let joinbtn = document.getElementById('joinnow');
-        function col(){
-            joinbtn.style.backgroundColor="#0095ff";
-            joinbtn.style.cursor="pointer";
-            joinbtn.style.color="black";
-        }
-        function coll(){
-            joinbtn.style.backgroundColor="#012E40";
-            joinbtn.style.color="white";
-        }
-        joinbtn.addEventListener("mouseover",col);
-        joinbtn.addEventListener("mouseout",coll);
-
-        //typewriter
-        data =[
-            "Apache is one of the most popular open-source web servers, powering millions of websites.",
-            "Linux powers over 96% of the world's top 1 million servers.",
-            "Android, the most used mobile OS, is based on Linux.",
-            "The first version of the Linux kernel was just 10,239 lines of code.",
-            "Python was created by Guido van Rossum as a hobby project during Christmas.",
-            "Git, the tool powering GitHub, was created by Linus Torvalds in just 10 days!",
-            "VS Code, developed by Microsoft, is built on an open-source framework called Electron.",
-            "The first email system was written on open systems using Unix.",
-            "The term “Open Source” was coined in 1998 to replace the more ambiguous “free software”.",
-            "Thousands of open-source contributors collaborate across time zones without ever meeting in person."
-            
-        ];
-
-        let currentQute = document.getElementById('facts');
-        let index = 0;
-        function QuoteChange(){
-            
-            if(index===(data.length)){
-                index = 0;
-            }
-            currentQute.innerHTML=data[index]
-            index++;
-        }
-        setInterval(QuoteChange,5000);
+    <script src="scripts/script.js">
     </script>
 </body>
 </html>
