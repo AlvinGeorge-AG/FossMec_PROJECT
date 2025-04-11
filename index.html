@@ -63,6 +63,15 @@
             max-width: 800px;
             color: #D9E4EC;
         }
+        #joinnow{
+            border: solid #012E40;
+            background-color: #012E40;
+            border-radius: 8px;
+            color: #FFFFFF;
+            align-content:center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
 
        
     </style>
@@ -74,6 +83,7 @@
             <a href="about.html">ABOUT</a>
             <a href="events.html">EVENTS</a>
             <a href="gallery.html">GALLERY</a>
+            <button id="joinnow"  >JOIN NOW</button>
         </div>
     </header>
     
@@ -90,5 +100,19 @@
         This student-driven organization is dedicated to promoting the use and development of free and<br>
         open-source software (FOSS) among students and the broader community.
     </div>
+    <script>
+        let joinbtn = document.getElementById('joinnow');
+        function col(){
+            joinbtn.style.backgroundColor="#0095ff";
+            joinbtn.style.cursor="pointer";
+            joinbtn.style.color="black";
+        }
+        function coll(){
+            joinbtn.style.backgroundColor="#012E40";
+            joinbtn.style.color="white";
+        }
+        joinbtn.addEventListener("mouseover",col);
+        joinbtn.addEventListener("mouseout",coll);
+    </script>
 </body>
 </html>
